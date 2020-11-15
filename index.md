@@ -1,3 +1,10 @@
+## Default port mapping for single services
+|Services | port |
+| ------------- | ------------- |
+| beer service  | 8080  |
+| beer order service  | 8081  |
+| beer inventory service  | 8082  |
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Griesba/griesba-brewery-wiki/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
