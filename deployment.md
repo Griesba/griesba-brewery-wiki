@@ -11,7 +11,43 @@ version: '3.1'
 
 services:
 
-  db:
+  db-myql-service:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: s3cret
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+	  
+#db-myql-order
+version: '3.1'
+
+services:
+
+  db-myql-order:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: s3cret
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+	  
+#db-myql-inventory
+version: '3.1'
+
+services:
+
+  db-myql-inventory:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
     restart: always
